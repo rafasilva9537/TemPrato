@@ -2,7 +2,7 @@ services:
   api:
     build:
       context: ./RecipesApi
-      target: production
+      target: development
     ports:
       - 5000:8080
     container_name: recipes_api
