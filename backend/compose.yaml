@@ -7,6 +7,10 @@ services:
       - 5000:8080
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - recipes_api:/src/
+    depends_on:
+      - db
     develop:
       watch:
         - action: rebuild
@@ -14,3 +18,20 @@ services:
         - action: sync
           path: ./RecipesApi
           target: /src
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 1433:1433
+    container_name: mssql_recipes
+    hostname: mssql_host
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+      - MSSQL_SA_PASSWORD=examplePassword123
+    volumes:
+      - recipes_db:/var/opt/mssql
+
+volumes:
+  recipes_db:
+  recipes_api:
