@@ -2,7 +2,7 @@ services:
   api:
     build:
       context: ./RecipesApi
-      target: development
+      target: production
     ports:
       - 5000:8080
     container_name: recipes_api
@@ -11,8 +11,9 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       db:
-        condition: service_healthy
-    restart: on-failure
+        condition: service_started # TODO: implement healthcheck (with service_healthy)
+        restart: true
+    restart: on-failure:10
     develop:
       watch:
         - action: rebuild
