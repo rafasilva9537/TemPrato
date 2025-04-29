@@ -9,9 +9,10 @@ services:
     hostname: api_host
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    # volumes:
     depends_on:
-      - db
+      db:
+        condition: service_healthy
+    restart: on-failure
     develop:
       watch:
         - action: rebuild
