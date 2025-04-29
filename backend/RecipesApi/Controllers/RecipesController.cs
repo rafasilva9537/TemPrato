@@ -16,6 +16,6 @@ public class RecipesController : ControllerBase
     [HttpGet]
     public IActionResult GetRecipes()
     {
-        return Ok("Get recipes page - test");
+        return Ok("Get recipes page - testd");
     }
 }
