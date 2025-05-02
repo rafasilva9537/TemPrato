@@ -10,6 +10,10 @@ public class AppDbContext : DbContext
     {
     }
 
+    public DbSet<Recipe> Recipes { get; set; }
+    public DbSet<Nutrient> Nutrients { get; set; }
+    public DbSet<UnitOfMeasurement> UnitOfMeasurements { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
