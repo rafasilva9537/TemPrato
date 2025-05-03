@@ -7,6 +7,7 @@
 body, html{
     height: 100%;
     width: 100%;
+    background-color: var(--background-color);
 }
 
 input{
@@ -19,6 +20,7 @@ input:focus{
 
 button{
     cursor: pointer;
+    
 }
 
 h2{
@@ -27,7 +29,8 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid black;
+    border-top: 1px solid;
+    border-color: var(--separator-color) ;
 }
 
 
@@ -40,7 +43,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ghostwhite;
+    background-color:var(--color-header);
 }
 
 .CJTitleIcon{
@@ -58,33 +61,35 @@ h1{
 
 .icon{
     font-size: 55px;
+    text-decoration: none;
 }
 
 .bsearch{
     height: 25%;
     width: 40%;
     border-radius: 10px;
+    border-color: var(--button-border);
 }
 
 .btnsearch{
     height: 55%;
     width: 3%;
     font-size: 25px;
-    border: 2px solid black;
+    border: 2px solid;
+    border-color: var(--button-border);
     border-radius: 10px;
-    background-color: transparent;
+   
 }
 
-.recipeButton{
-    height: 55%;
-    width: 3%;
-    font-size: 25px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: transparent;
-    background-image: url("assets/sketch-book.png");
-    background-size: cover;
-    background-position: center;
+.btnRecipe{
+    padding: 14px;
+    border: 1px solid;
+    border-color: var(--button-border);
+    border-radius: 8px;   
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -97,6 +102,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--filter-color);
 }
 
 .filter{
@@ -107,7 +113,7 @@ h1{
     justify-content: center;
     cursor: pointer;
     margin-left: 20px;
-    border: 2px solid black;
+    border: 2px solid var(--button-border);
     font-weight: bolder;
     border-radius: 20px;
     transition: 0.5s;
@@ -115,22 +121,23 @@ h1{
 
 .filter:hover{
     height: 60%;
-    transition: 0.1s;
-
+    transition: 0.2s;    
+    background-color: var(--button-hover);
+    color: white;
 }
 
-.recipeButton:hover{
-    height: 60%;
+.btnRecipe:hover{
+    cursor: pointer;
     color: white;
-    background-color: rgb(223, 223, 223);
-    transition: 0.2s;
+    background-color: var(--button-hover);
+    transition: 0.4s;
 }
 
 .btnsearch:hover{
     height: 60%;
     color: white;
-    background-color: rgb(223, 223, 223);
-    transition: 0.2s;
+    background-color: var(--button-hover);
+    transition: 0.4s;
 }
 
 /*Seção de receitas*/
@@ -145,12 +152,14 @@ h1{
     justify-content: center;
     overflow-y: auto;
     overflow-x: hidden;
+    
 }
 
 .revenues{
     height: 40%;
     width: 20%;
-    border: 2px solid black;
+    border: 2px solid;
+    border-color: var(--button-border);
     cursor: pointer;
     border-radius: 10px;
 }
@@ -160,12 +169,14 @@ h1{
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    
 }
 
 .infs{
     height: 40%;
     width: 100%;
     border-top: 2px solid black;
+    
 }
 
 .name{
