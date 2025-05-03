@@ -74,6 +74,21 @@ h1{
     border-radius: 10px;
     background-color: transparent;
 }
+
+.recipeButton{
+    height: 55%;
+    width: 3%;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: url("assets/sketch-book.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 /*Filtros*/
 
 .filters{
@@ -99,8 +114,23 @@ h1{
 }
 
 .filter:hover{
-    height: 65%;
-    transition: 0.5s;
+    height: 60%;
+    transition: 0.1s;
+
+}
+
+.recipeButton:hover{
+    height: 60%;
+    color: white;
+    background-color: rgb(223, 223, 223);
+    transition: 0.2s;
+}
+
+.btnsearch:hover{
+    height: 60%;
+    color: white;
+    background-color: rgb(223, 223, 223);
+    transition: 0.2s;
 }
 
 /*Seção de receitas*/
