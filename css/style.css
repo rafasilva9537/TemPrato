@@ -46,24 +46,6 @@ header{
     background-color:var(--color-header);
 }
 
-.CJTitleIcon{
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    position: absolute;
-    left: 20px;
-}
-
-h1{
-    font-size: 35px;
-    font-family: 'Playfair Display', serif;
-}
-
-.icon{
-    font-size: 55px;
-    text-decoration: none;
-}
-
 .bsearch{
     height: 25%;
     width: 40%;

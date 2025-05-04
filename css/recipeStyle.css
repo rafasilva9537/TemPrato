@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--color-header);
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+
+button{
+    cursor: pointer; 
+}
+
+.containerTexto{
+    margin-top: 15%;
+    margin-left: 50%;
+    margin-right: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
