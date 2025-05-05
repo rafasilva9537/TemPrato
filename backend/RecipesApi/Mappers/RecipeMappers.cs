@@ -27,6 +27,17 @@ public static class RecipeMappers
         };
     }
 
+    public static RecipeDto ToRecipeDto(this Recipe recipeModel)
+    {
+        return new RecipeDto
+        {
+            Name = recipeModel.Name,
+            Description = recipeModel.Description,
+            CreatedAt = recipeModel.CreatedAt,
+            UpdatedAt = recipeModel.UpdatedAt,
+        };
+    }
+
     public static RecipeMainInfoDto ToRecipeMainInfoDto(this Recipe recipeModel)
     {
         return new RecipeMainInfoDto
