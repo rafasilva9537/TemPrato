@@ -11,32 +11,84 @@
     <link rel="stylesheet" href="/css/menu.css">
     <title>Crie uma nova receita</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
+
 <body>
-
     <header>
+        <a href="/index.html" class="titleIcon">
+            <span class="menuIcon">🍽️</span> <h1>TemPrato</h1>
+        </a>
+    </header>
+<br>
 
-        <header>
-            <a href="/index.html" class="titleIcon">
-                <span class="menuIcon">🍽️</span> <h1>TemPrato</h1>
-            </a>
-            
-            <h2>Compartilhe com a gente ✨</h2>
-        </header>
+<div id="editor">
+    <button id="bold"><i class="fas fa-bold"></i></button>
+    <button id="italic"><i class="fas fa-italic"></i></button>
+    <button id="underline"><i class="fas fa-underline"></i></button>
+    <button id="strikethrough"><i class="fas fa-strikethrough"></i></button>
+    <button id="subscript"><i class="fas fa-subscript"></i></button>
+    <button id="superscript"><i class="fas fa-superscript"></i></button>
+    <button id="bold"><i class="fas fa-bold"></i></button>
+
+    <select id="fontSize">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <button id="textColor"><i class="fas fa-font"></i></button>
+    <button id="bgColor"><i class="fas fa-fill-drip"></i></button>
+
+    <select id="font">
+        <option value="Arial">Arial</option>
+        <option value="TimesNewRoman"> Times New Roman</option>
+        <option value="Courier New"> Courier New</option>
+    </select>
+
+
+    <button id="alignLeft"><i class="fas fa-align-left"></i></button>
+    <button id="alignCenter"><i class="fas fa-align-center"></i></button>
+    <button id="alignRight"><i class="fas fa-align-right"></i></button>
+    <button id="alignJustify"><i class="fas fa-align-justify"></i></button>
+   
+    <button id="outdent"><i class="fas fa-outdent"></i></button>
+    <button id="indent"><i class="fas fa-indent"></i></button>
+
+    <button id="orderedList"><i class="fas fa-list-ol"></i></button>
+    <button id="unorderedList"><i class="fas fa-list-ul"></i></button>
+
+    <button id="insertImageUrl"><i class="fas fa-image"></i></button>
+    <button id="insertImageFile"><i class="fas fa-upload"></i></button>
+    <textarea rows="20" cols="100" contenteditable="true" id="recipeText"></textarea>
+
+</div>
+
+<input type="color" id="colorTextPick" style="display: none;">
+<input type="color" id="bgColorPick" style="display: none;">
+    
+
+
+
 
     
     <section class="Toolbar"></section>
     
-
         <div class="containerTexto">
-            <textarea rows="50" cols="150" id="recipeText"></textarea>
         </div>
 
 
 
 </body>
 
-<script src="script.js"></script>
+<script src="/js/markdown.js"></script>
 
 </html>
