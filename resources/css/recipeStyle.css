@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--color-header);
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+
+button{
+    background-color: transparent;
+    cursor: pointer; 
+    border: none;
+    font-size: 1.2em;
+    margin: 5px 5px;
+}
+
+button:hover {
+    color: #333;
+}
+
+select {
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.containerTexto{
+    margin-top: 15%;
+    margin-left: 50%;
+    margin-right: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+}
+    
+
+
+#editor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+#recipeText{
+    padding: 10px;
+    border: 1px solid #ddd;
+    min-height: 200px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+input[type="color"] {
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 3px;
+    width: 50px;
+}
+
+input[type = "text"],
+input[type = "file"] {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 200px;
+}
+
+

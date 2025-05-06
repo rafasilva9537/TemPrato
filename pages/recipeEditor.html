@@ -3,12 +3,11 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/recipeStyle.css">
+    <link rel="stylesheet" href="/resources/css/recipeStyle.css">
     <link rel="stylesheet" href="/constants/colors.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/resources/css/iconTitle.css">
     <title>Crie uma nova receita</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -25,13 +24,14 @@
 <br>
 
 <div id="editor">
+    <button id="undo"><i class="fas fa-undo"></i></button>
+    <button id="redo"><i class="fas fa-redo"></i></button>
     <button id="bold"><i class="fas fa-bold"></i></button>
     <button id="italic"><i class="fas fa-italic"></i></button>
     <button id="underline"><i class="fas fa-underline"></i></button>
     <button id="strikethrough"><i class="fas fa-strikethrough"></i></button>
     <button id="subscript"><i class="fas fa-subscript"></i></button>
     <button id="superscript"><i class="fas fa-superscript"></i></button>
-    <button id="bold"><i class="fas fa-bold"></i></button>
 
     <select id="fontSize">
         <option value="1">1</option>
@@ -74,21 +74,8 @@
 
 <input type="color" id="colorTextPick" style="display: none;">
 <input type="color" id="bgColorPick" style="display: none;">
-    
 
-
-
-
-    
-    <section class="Toolbar"></section>
-    
-        <div class="containerTexto">
-        </div>
-
-
-
+    <script src="/resources/js/markdown.js"></script>
 </body>
 
-<script src="/js/markdown.js"></script>
 
-</html>
