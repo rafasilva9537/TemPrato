@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resources/css/recipeStyle.css">
-    <link rel="stylesheet" href="/constants/colors.css">
-    <link rel="stylesheet" href="/resources/css/iconTitle.css">
+    <link rel="stylesheet" href="/TemPrato/resources/css/recipeStyle.css">
+    <link rel="stylesheet" href="/TemPrato/constants/colors.css">
+    <link rel="stylesheet" href="/TemPrato/resources/css/iconTitle.css">
     <title>Crie uma nova receita</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <a href="/index.html" class="titleIcon">
+        <a href="/TemPrato/index.html" class="titleIcon">
             <span class="menuIcon">🍽️</span> <h1>TemPrato</h1>
         </a>
     </header>
@@ -68,12 +68,14 @@
 
     <button id="insertImageUrl"><i class="fas fa-image"></i></button>
     <button id="insertImageFile"><i class="fas fa-upload"></i></button>
-    <textarea rows="20" cols="100" contenteditable="true" id="recipeText"></textarea>
+    <textarea rows="50" cols="97" wrap="on" contenteditable="true" id="recipeText"></textarea>
 
 </div>
 
 <input type="color" id="colorTextPick" style="display: none;">
 <input type="color" id="bgColorPick" style="display: none;">
+
+
 
     <script src="/resources/js/markdown.js"></script>
 </body>
