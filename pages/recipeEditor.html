@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="/TemPrato/resources/css/recipeStyle.css">
     <link rel="stylesheet" href="/TemPrato/constants/colors.css">
     <link rel="stylesheet" href="/TemPrato/resources/css/iconTitle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="/TemPrato/resources/js/markdown.js"></script>
     <title>Crie uma nova receita</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
 
 
@@ -23,9 +21,11 @@
             <h1>TemPrato</h1>
         </a>
     </header>
-    <br>
+    
+<br>
 
-    <select id="headering" onchange="heading(this.value)">
+<div class="toolsContainer">
+ <select id="headering" onchange="heading(this.value)">
         <option value="h1">H1</option>
         <option value="h2">H2</option>
         <option value="h3">H3</option>
@@ -44,6 +44,9 @@
     <button id="subscript" onclick="subscript()"><i class="fas fa-subscript"></i></button>
     <button id="superscript" onclick="superscript()"><i class="fas fa-superscript"></i></button>
 
+
+    <div class="fontSizeCont">
+    <button id="actress" onclick="actress()"><i class="fas fa-plus"></i></button>
     <select id="fontSize" onchange="fontSize(this.value)">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -53,6 +56,10 @@
         <option value="6">6</option>
         <option value="7">7</option>
     </select>
+    <button id="decrease" onclick="decrease()"><i class="fas fa-minus"></i></button>
+    </div>
+
+
 
     <button id="textColor" onclick="changeTextColor()"><i class="fas fa-font"></i></button>
     <button id="bgColor" onclick="changeBgColor()"><i class="fas fa-fill-drip"></i></button>
@@ -79,10 +86,13 @@
     <button id="insertImageUrl" onclick="insertImageUrl()"><i class="fas fa-image"></i></button>
     <button id="insertImageFile"><i class="fas fa-upload"></i></button>
 
-    <div id="editor" contentEditable="true" style="border: 1px solid #ccc; padding: 10px;"></div>
+
 
     <input type="color" id="colorTextPick" style="display: none;">
     <input type="color" id="bgColorPick" style="display: none;">
+</div>
+
+       <div id="editor" contentEditable="true" style="border: 1px solid #ccc; padding: 10px;"></div>
 
 
 
