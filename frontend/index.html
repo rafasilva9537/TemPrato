@@ -3,37 +3,31 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <link rel="stylesheet" href="/TemPrato/constants/colors.css">
-    <link rel="stylesheet" href="/TemPrato/resources/css/iconTitle.css">
-    <link rel="stylesheet" href="/TemPrato/resources/css/style.css">
-    
-    <title>Página inicial</title>
-
+    <link rel="stylesheet" href="/frontend/assets/styles/style.css">
+    <title>TemPrato - Início</title>
 </head>
 
 <body>
-
     <header>
-        <a href="/index.html" class="titleIcon">
-            <span class="menuIcon">🍽️</span> <h1>TemPrato</h1>
-        </a>
 
+        <a href="/frontend/index.html" class="homePageLink">
+            <img class="temPratoLogo" src="/frontend/assets/icons/temPratoLogo.png" /></span>
+            <h1 class="menuTitle">TemPrato</h1>
+        </a>
 
         <input class="bsearch" type="text" placeholder="Torta de frango">
 
-        <button class="btnsearch">
-            &#128269;
-        </button>
+        <button class="btnsearch"> <i class="fas fa-search"></i></button>
 
-<a href="/TemPrato/pages/recipeEditor.html" class="btnRecipe">Crie uma nova receita ✨</a>
-        
+        <a class="btnRecipe" href="/frontend/pages/recipeEditor.html">
+            <i class="fas fa-plus-square"></i>Nova Receita</a>
 
     </header>
-    <section class="filters">
 
+
+    <section class="filters">
         <button class="filter" id="1">15 minutos</button>
         <button class="filter" id="2">Fácil</button>
         <button class="filter" id="3">Vegana</button>
@@ -44,37 +38,31 @@
         <button class="filter" id="8">Lanche</button>
         <button class="filter" id="9">Micro-ondas</button>
         <button class="filter" id="10">Forno</button>
-
-
     </section>
+
     <h2>
         <span class="h1title">Receitas</span>
     </h2>
+
     <section class="cj-revenues">
 
-        <div class="revenues">      
-
-            <figure class="img">
-
-
-            </figure>
+        <div class="revenues">
+            <figure class="img"></figure>
+            
             <div class="infs">
-                
+
                 <h3 class="name">Torta de Frango</h3>
+
                 <div class="filterRevenue">
                     <span class="filtersRevenue">Fácil</span>
                     <span class="filtersRevenue">Salgados</span>
                 </div>
 
             </div>
-
         </div>
 
     </section>
 
 </body>
-
-<script src="/resources/js/script.js"></script>
-
-
+<script src="/frontend/resources/js/script.js"></script>
 </html>
