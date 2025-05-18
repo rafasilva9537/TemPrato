@@ -1,7 +1,13 @@
+@import url("iconTitle.css");
+@import url("/frontend/assets/fonts/fonts.css");
+@import url("/frontend/assets/themes/light.css");
+@import url("/frontend/assets/fonts/faFasIcons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial;
+    font-family: 'PT Sans';
 }
 
 body, html{
@@ -20,29 +26,24 @@ input:focus{
 
 button{
     cursor: pointer;
-    
-}
-
-h2{
-    height: 9%;
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid;
-    border-color: var(--separator-color) ;
 }
 
 
-/*Cabeçalho*/
+
+/*head*/
 
 header{
+    margin: 10px;
     height: 10%;
     width: 100%;
     gap: 4px;
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background-color:var(--color-header);
 }
 
@@ -54,26 +55,30 @@ header{
 }
 
 .btnsearch{
-    height: 55%;
+    height: 45%;
     width: 3%;
     font-size: 25px;
-    border: 2px solid;
-    border-color: var(--button-border);
+    margin-right: 70px;
+    margin-left: 0;
+    border: 2px transparent;
     border-radius: 10px;
-   
+    border-color: var(--button-border);
+    background-color: transparent;
 }
 
 .btnRecipe{
-    padding: 14px;
-    border: 1px solid;
-    border-color: var(--button-border);
-    border-radius: 8px;   
+    height: 40%;
+    width: 10%;
+    font-size: 23px;
+    border: 2px solid;
+    border-radius: 10px; 
+    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    border-color: var(--button-border);
     color: black;
 }
-
 
 
 /*Filtros*/
@@ -90,15 +95,15 @@ header{
 .filter{
     height: 50%;
     width: 8%;
+    margin-left: 20px;
+    transition: 0.5s;
+    border-radius: 20px;
+    border: 2px solid var(--button-border);
     display: flex;
     align-items: center;
+    font-weight: bolder;
     justify-content: center;
     cursor: pointer;
-    margin-left: 20px;
-    border: 2px solid var(--button-border);
-    font-weight: bolder;
-    border-radius: 20px;
-    transition: 0.5s;
 }
 
 .filter:hover{
@@ -116,7 +121,7 @@ header{
 }
 
 .btnsearch:hover{
-    height: 60%;
+    cursor: pointer;
     color: white;
     background-color: var(--button-hover);
     transition: 0.4s;

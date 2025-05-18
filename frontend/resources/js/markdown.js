@@ -1,6 +1,3 @@
-
-
-
 function heading(level) {
     document.execCommand('formatBlock', false, level);
 }
@@ -90,5 +87,4 @@ function unorderedList() {
 function insertImageUrl() {
     let url = prompt("Insira a URL da imagem:");
     if (url) document.execCommand('insertImage', false, url);
-
 }
