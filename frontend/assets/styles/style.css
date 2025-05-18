@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+input{
+    padding: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    
+}
+
+h2{
+    height: 9%;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid;
+    border-color: var(--separator-color) ;
+}
+
+
+/*Cabeçalho*/
+
+header{
+    height: 10%;
+    width: 100%;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--color-header);
+}
+
+.bsearch{
+    height: 25%;
+    width: 40%;
+    border-radius: 10px;
+    border-color: var(--button-border);
+}
+
+.btnsearch{
+    height: 55%;
+    width: 3%;
+    font-size: 25px;
+    border: 2px solid;
+    border-color: var(--button-border);
+    border-radius: 10px;
+   
+}
+
+.btnRecipe{
+    padding: 14px;
+    border: 1px solid;
+    border-color: var(--button-border);
+    border-radius: 8px;   
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*Filtros*/
+
+.filters{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--filter-color);
+}
+
+.filter{
+    height: 50%;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 20px;
+    border: 2px solid var(--button-border);
+    font-weight: bolder;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.filter:hover{
+    height: 60%;
+    transition: 0.2s;    
+    background-color: var(--button-hover);
+    color: white;
+}
+
+.btnRecipe:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--button-hover);
+    transition: 0.4s;
+}
+
+.btnsearch:hover{
+    height: 60%;
+    color: white;
+    background-color: var(--button-hover);
+    transition: 0.4s;
+}
+
+/*Seção de receitas*/
+
+.cj-revenues{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+.revenues{
+    height: 40%;
+    width: 20%;
+    border: 2px solid;
+    border-color: var(--button-border);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img{
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+.infs{
+    height: 40%;
+    width: 100%;
+    border-top: 2px solid black;
+    
+}
+
+.name{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterRevenue{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filtersRevenue{
+    height: 60%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: white;
+}
