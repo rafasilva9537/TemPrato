@@ -13,7 +13,7 @@
 body, html{
     height: 100%;
     width: 100%;
-    background-color: var(--background-color);
+    background-color: var(--background-300);
 }
 
 input{
@@ -26,6 +26,9 @@ input:focus{
 
 button{
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -34,6 +37,7 @@ button{
 
 header{
     margin: 10px;
+    padding-top: 10px;
     height: 10%;
     width: 100%;
     gap: 4px;
@@ -47,29 +51,45 @@ header{
     background-color:var(--color-header);
 }
 
-.bsearch{
-    height: 25%;
-    width: 40%;
-    border-radius: 10px;
-    border-color: var(--button-border);
+.search{
+      width: 50%;
+      position:static;
+      display: flex;
+}
+
+.searchArea{
+  width: 100%;
+  margin-left: 20px;
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.bsearch:focus{
+  color: #000000;
 }
 
 .btnsearch{
-    height: 45%;
-    width: 3%;
-    font-size: 25px;
-    margin-right: 70px;
-    margin-left: 0;
-    border: 2px transparent;
-    border-radius: 10px;
-    border-color: var(--button-border);
-    background-color: transparent;
+  width: 40px;
+  margin-right: 30px;
+  height: 36px;
+  border: 1px solid #000000;
+  background: #9ca2a3;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .btnRecipe{
     height: 40%;
     width: 10%;
-    font-size: 23px;
+    font-size: 20px;
     border: 2px solid;
     border-radius: 10px; 
     display: flex;
@@ -78,6 +98,17 @@ header{
     text-decoration: none;
     border-color: var(--button-border);
     color: black;
+    position:static;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.btnProfile{
+    text-decoration: none;
+    color: var(--text-950);
+    position:static;
 }
 
 
@@ -115,16 +146,23 @@ header{
 
 .btnRecipe:hover{
     cursor: pointer;
-    color: white;
+    color: rgb(70, 70, 70);
     background-color: var(--button-hover);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .btnsearch:hover{
     cursor: pointer;
-    color: white;
+    color: rgb(70, 70, 70);
     background-color: var(--button-hover);
-    transition: 0.4s;
+    transition: 0.3s;
+}
+
+.btnProfile:hover{
+    cursor: pointer;
+    color: rgb(70, 70, 70);
+    background-color: var(--button-hover);
+    transition: 0.3s;
 }
 
 /*Seção de receitas*/

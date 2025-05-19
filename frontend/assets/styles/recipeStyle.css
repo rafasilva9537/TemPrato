@@ -11,12 +11,13 @@
 }
 
 header{
+    margin: 10px;
+    padding-top: 10px;
     height: 10%;
     width: 100%;
-    margin: 10px;
     gap: 4px;
+    flex: 1;
     display: flex;
-    flex: auto;
     align-items: center;
     justify-content: left;
     white-space: nowrap;
@@ -28,7 +29,7 @@ header{
 body, html{
     height: 100%;
     width: 100%;
-    background-color: var(--background-color);
+    background-color: var(--background-300);
 }
 
 .toolsContainer{

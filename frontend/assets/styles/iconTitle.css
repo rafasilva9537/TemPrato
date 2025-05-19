@@ -42,7 +42,7 @@
   position: static;
   display: flex;
   left: 0;
-  color: black;
+  color: var(--text-950);
   text-decoration: none;
 }
 

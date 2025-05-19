@@ -1,0 +1,35 @@
+@import url("iconTitle.css");
+@import url("/frontend/assets/fonts/fonts.css");
+@import url("/frontend/assets/themes/light.css");
+@import url("/frontend/assets/fonts/faFasIcons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans';
+}
+
+header{
+    margin: 10px;
+    padding-top: 10px;
+    height: 10%;
+    width: 100%;
+    gap: 4px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color:var(--color-header);
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-300);
+}
