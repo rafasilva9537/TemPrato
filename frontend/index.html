@@ -13,7 +13,7 @@
     <header>
 
         <a href="/frontend/index.html" class="homePageLink">
-            <img class="temPratoLogo" src="/frontend/assets/icons/temPratoLogo.png" /></span>
+            <img class="temPratoLogo" src="/frontend/assets/icons/temPratoLogo.png"/></span>
             <h1 class="menuTitle">TemPrato</h1>
         </a>
 
@@ -30,7 +30,16 @@
         <a class="btnProfile" href="/frontend/pages/userProfile.html" >
             <i class="fa fa-user-circle" aria-hidden="true"></i></a> 
 
-        <button onclick="themeChange()">Alt Tema</button>
+            <div class="themeChBox" >
+                <button class="BtnlightIcon" onclick="themeChangeLight()">
+                    <img id="lightIcon" src="/frontend/assets/icons/lightIcon.png">
+                </button>
+
+                <button class="BtndarkIcon" onclick="themeChangeDark()">
+                    <img id="darkIcon" src="/frontend/assets/icons/darkIcon.png">
+                </button>
+            </div>
+
 
     </header>
 

@@ -1,0 +1,20 @@
+button{
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.BtnlightIcon, .BtndarkIcon{
+    padding: 2px;
+    width: 40px;
+    height: 30px;
+    margin: 2px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    
+}

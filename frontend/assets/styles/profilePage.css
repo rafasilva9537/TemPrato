@@ -1,9 +1,9 @@
 @import url("iconTitle.css");
 @import url("/frontend/assets/fonts/fonts.css");
-@import url("/frontend/assets/themes/light.css");
-@import url("/frontend/assets/fonts/faFasIcons.css");
+@import url("/frontend/assets/themes/themes.css");
+@import url("/frontend/assets/fonts/allIcons.css");
+@import url("/frontend/assets/icons/ajustIcons.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
-
 
 
 *{

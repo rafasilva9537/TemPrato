@@ -27,3 +27,18 @@ h4 {font-size: 1.777rem; }
 h5 {font-size: 1.333rem; }
 
 small {font-size: 0.750rem; }
+
+
+/*fa-fasIcons*/
+
+.fa-plus-square{
+  margin: 10px;
+  font-size: 25px;
+  display: flex;
+}
+
+.fa-user-circle{
+  margin: 50px;
+  font-size: 70px;
+  display: flex;
+}

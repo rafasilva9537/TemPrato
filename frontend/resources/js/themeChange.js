@@ -1,7 +1,11 @@
-document.documentElement.setAttribute('data-theme', 'dark');    
+document.documentElement.setAttribute('data-theme', 'dark', 'light');    
 
-function themeChange() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-    }
+function themeChangeLight(){
+  const newTheme = 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+}
+
+function themeChangeDark(){
+  const newTheme = 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+}
