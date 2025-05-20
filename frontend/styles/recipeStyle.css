@@ -1,37 +1,4 @@
-@import url("iconTitle.css");
-@import url("/frontend/assets/fonts/fonts.css");
-@import url("/frontend/assets/themes/themes.css");
-@import url("/frontend/assets/fonts/allIcons.css");
-@import url("/frontend/assets/icons/ajustIcons.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'PT Sans';
-}
-
-header{
-    margin: 10px;
-    padding-top: 10px;
-    height: 10%;
-    width: 100%;
-    gap: 4px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-color:var(--color-header);
-}
-
-body, html{
-    height: 100%;
-    width: 100%;
-    background-color: var(--background-300);
-}
 
 .toolsContainer{
     margin: auto;
@@ -53,7 +20,7 @@ body, html{
     margin: 1px
 }
 
-button{
+button{  /*add class or ID*/
     width: 1em;
     height: 1em;
     font-size: 1.2em;
@@ -65,32 +32,8 @@ button{
     border: none;    
 }
 
-#actress{
-    text-align: center;
-    font-size: 1em;
-    left: 0;
-    margin-top: 1;
-    padding: 1px;
-}
 
-#decrease{
-    text-align: center;
-    font-size: 1em;
-    left: 0;
-    margin-top: 2px;
-    padding: 1px;
-}
-
-#fontSize{
-    text-align: center;
-    padding: 0;
-}
-
-button:hover {
-    color: #252525;
-}
-
-select {
+select { /*add class or ID*/
     cursor: pointer;
     font-size: 1em;
     padding: 2px;
@@ -99,7 +42,7 @@ select {
     margin: 0 5px;
 }
 
-.options {
+.options { /*add class or ID*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;

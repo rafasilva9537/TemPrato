@@ -1,0 +1,57 @@
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans';
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-300);
+}
+
+
+header{
+    margin: 10px;
+    padding-top: 10px;
+    height: 10%;
+    width: 100%;
+    gap: 4px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color:var(--color-header);
+}
+
+
+input{
+    padding: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover { /*add class or ID*/
+    color: #252525;
+}

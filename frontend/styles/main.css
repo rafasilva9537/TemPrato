@@ -1,0 +1,14 @@
+@import url("/frontend/assets/fonts/fonts.css");
+@import url("/frontend/components/buttons.css");
+@import url("/frontend/components/iconTitle.css");
+@import url("/frontend/constants/colors.css");
+@import url("/frontend/constants/themes.css");
+@import url("/frontend/styles/global.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+
+/*pages stylesheet*/
+@import url("/frontend/styles/mainPage.css");
+@import url("/frontend/styles/recipeStyle.css");
+
