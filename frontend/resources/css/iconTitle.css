@@ -1,0 +1,22 @@
+
+
+/* Icone "tem prato" */
+
+.titleIcon{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    position: absolute;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.menuIcon{
+    font-size: 55px;
+    text-decoration: none;
+    
+}
+
