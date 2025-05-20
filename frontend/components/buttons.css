@@ -98,23 +98,35 @@
 
 /*recipeStyle*/
 
-#actress{
-    text-align: center;
-    font-size: 1em;
-    left: 0;
-    margin-top: 1;
-    padding: 1px;
+.btnTool {
+    display: flex;
+    width: 1em;
+    height: 1em;
+    font-size: 1.2em;
+    margin: 2px 2px;
+    flex: 1;
+    background-color: transparent;
+    border: none;   
+    cursor: pointer; 
 }
 
-#decrease{
-    text-align: center;
+.toolSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     font-size: 1em;
-    left: 0;
-    margin-top: 2px;
-    padding: 1px;
+    margin: 3px;
+    border-radius: 4px;
+    border: 2px solid #000000;
+    cursor: pointer;
 }
 
-#fontSize{
-    text-align: center;
-    padding: 0;
+.optTool {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
 }
