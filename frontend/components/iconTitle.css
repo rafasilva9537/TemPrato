@@ -5,25 +5,17 @@
 
 
 .temPratoLogo{
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
   position: static;
-  margin-left: 20px;
-  margin-right: 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  justify-content: center;
 }
 
 .menuTitle{
   align-self: center;
   position: static;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 9px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin: 5px;
   font-family: "Dancing Script", cursive;
   font-style: normal;
   font-size: 60px;
@@ -44,6 +36,7 @@
   left: 0;
   color: var(--text-950);
   text-decoration: none;
+  margin: 10px;
 }
 
 

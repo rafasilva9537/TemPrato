@@ -8,11 +8,13 @@
     background-color: transparent;
     border-color: transparent;
     border-radius: 5px;
+
 }
 
 #lightIcon, #darkIcon{
     height: 20px;
     width: 20px;
+   
 }
 
 .filter{
@@ -21,7 +23,7 @@
     margin-left: 20px;
     transition: 0.5s;
     border-radius: 20px;
-    border: 2px solid var(--button-border);
+    border: 2px solid var(--primary-400);
     display: flex;
     align-items: center;
     font-weight: bolder;
@@ -33,41 +35,35 @@
     height: 60%;
     transition: 0.2s;    
     background-color: var(--button-hover);
-    color: white;
+    color: var(--background-600);
 }
 
 .btnsearch{
   width: 40px;
   margin-right: 30px;
   height: 36px;
-  border: 1px solid #000000;
-  background: #9ca2a3;
+  border: 3px solid var(--secondary-700);
   text-align: center;
-  color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
-}
-
-.btnsearch:hover{
-    cursor: pointer;
-    color: rgb(70, 70, 70);
-    background-color: var(--button-hover);
-    transition: 0.3s;
+  color: var(--text-950);
+  background-color: var(--primary-50);
+  border-left: transparent;
 }
 
 .btnRecipe{
     height: 40%;
-    width: 10%;
-    font-size: 20px;
-    border: 2px solid;
+    width: 150px;
+    font-size: 15px;
+    border: 2px solid var(--primary-800);
     border-radius: 10px; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border-color: var(--button-border);
-    color: black;
+    background-color:  var(--accent-100);
+    color: var(--text-950);
     position:static;
     white-space: nowrap;
     overflow: hidden;
@@ -76,8 +72,7 @@
 
 .btnRecipe:hover{
     cursor: pointer;
-    color: rgb(70, 70, 70);
-    background-color: var(--button-hover);
+    color: var(--background-600);
     transition: 0.3s;
 }
 
@@ -89,8 +84,7 @@
 
 .btnProfile:hover{
     cursor: pointer;
-    color: rgb(70, 70, 70);
-    background-color: var(--button-hover);
+    color: var(--background-600);
     transition: 0.3s;
 }
 

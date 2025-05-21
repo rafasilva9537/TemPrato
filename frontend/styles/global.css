@@ -7,31 +7,27 @@
 body, html{
     height: 100%;
     width: 100%;
-    background-color: var(--background-300);
-    overflow: scroll;
+    background-color: var(--background-100);
 }
 
 
 header{
-    margin: 10px;
-    padding-top: 10px;
+    margin-bottom: 5px;
+    padding: 15px;
     height: 10%;
     width: 100%;
     gap: 4px;
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-color:var(--color-header);
-    animation-direction: normal;
+    background-color:var(--background-500);
+    border-bottom: solid var(--secondary-700);
 }
 
 
 input{
     padding: 10px;
+    background-color:var(--accent-100) ;
 }
 
 input:focus{
@@ -46,8 +42,4 @@ button{
     text-align: center;
     align-items: center;
     justify-content: center;
-}
-
-button:hover { /*add class or ID*/
-    color: #252525;
 }
