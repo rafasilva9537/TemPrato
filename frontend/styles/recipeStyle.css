@@ -35,7 +35,7 @@
     min-height: 200px;
 }
 
-input[type="color"] {
+#colorTextPick[type="color"] {
     margin: 5px;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -43,7 +43,7 @@ input[type="color"] {
     width: 50px;
 }
 
-input[type = "text"], input[type = "file"] {
+#bgColorPick[type = "text"], input[type = "file"] {
     border: 1px solid #ddd;
     margin: 5px;
     padding: 5px;

@@ -49,3 +49,22 @@
 
 
 /*Animation logo*/
+
+.temPratoLogo,.menuTitle,.homePageLink{
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-direction: normal;
+}
+
+
+@keyframes pulse{
+
+  50%{
+    transform: scale(1.0);
+  }
+
+  3%{
+    transform: scale(0.2);
+  }
+
+}
