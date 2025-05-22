@@ -10,9 +10,13 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Recipe> Recipes { get; set; }
-    public DbSet<Nutrient> Nutrients { get; set; }
-    public DbSet<UnitOfMeasurement> UnitOfMeasurements { get; set; }
+    public DbSet<Recipe> Recipe { get; set; }
+    public DbSet<Nutrient> Nutrient { get; set; }
+    public DbSet<UnitOfMeasurement> UnitOfMeasurement { get; set; }
+    public DbSet<Tag> Tag { get; set; }
+    public DbSet<RecipeTag> RecipeTag { get; set; }
+    public DbSet<RecipeNutrient> RecipeNutrient { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -9,7 +9,7 @@ public class UnitOfMeasurementConfiguration : IEntityTypeConfiguration<UnitOfMea
     public void Configure(EntityTypeBuilder<UnitOfMeasurement> builder)
     {
         builder.ToTable("UnitOfMeasurement");
-        builder.HasKey(uom => uom.Name);
+        builder.HasKey(uom => uom.Id);
 
         builder.Property(uom => uom.Name).HasMaxLength(50);
     }
