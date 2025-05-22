@@ -1,40 +1,78 @@
+using Microsoft.EntityFrameworkCore;
+using RecipesApi.Data;
 using RecipesApi.Dtos.Recipe;
+using RecipesApi.Mappers;
 
 namespace RecipesApi.Services;
 
 public interface IRecipeService
 {
     Task<RecipeDto> CreateRecipeAsync(CreateRecipeDto createRecipeDto);
-    Task<RecipeDto> UpdateRecipeAsync(UpdateRecipeDto createRecipeDto);
+    Task<RecipeDto?> UpdateRecipeAsync(UpdateRecipeDto updateRecipeDto);
     Task<bool> DeleteRecipeAsync(int recipeId);
-    Task<RecipeDto> GetRecipeAsync(int recipeId);
+    Task<RecipeDto?> GetRecipeAsync(int recipeId);
     Task<IList<RecipeMainInfoDto>> GetRecipesAsync();
 }
 
 public class RecipeService : IRecipeService
 {
-    public Task<RecipeDto> CreateRecipeAsync(CreateRecipeDto createRecipeDto)
+    private readonly ILogger<IRecipeService> _logger;
+    private readonly AppDbContext _context;
+
+    public RecipeService(ILogger<IRecipeService> logger, AppDbContext dbContext)
     {
-        throw new NotImplementedException();
+        _logger = logger;
+        _context = dbContext;
     }
 
-    public Task<bool> DeleteRecipeAsync(int recipeId)
+    public async Task<RecipeDto> CreateRecipeAsync(CreateRecipeDto createRecipeDto)
     {
-        throw new NotImplementedException();
+        var newRecipe = createRecipeDto.ToRecipeModel();
+        await _context.Recipe.AddAsync(newRecipe);
+        await _context.SaveChangesAsync();
+        
+        return newRecipe.ToRecipeDto();
     }
 
-    public Task<RecipeDto> GetRecipeAsync(int recipeId)
+    public async Task<bool> DeleteRecipeAsync(int recipeId)
     {
-        throw new NotImplementedException();
+        var recipeToDelete = _context.Recipe.FirstOrDefault(r => r.Id == recipeId);
+
+        if (recipeToDelete is null) return false;
+
+        _context.Recipe.Remove(recipeToDelete);
+        await _context.SaveChangesAsync();
+
+        return true;
     }
 
-    public Task<IList<RecipeMainInfoDto>> GetRecipesAsync()
+    public async Task<RecipeDto?> GetRecipeAsync(int recipeId)
     {
-        throw new NotImplementedException();
+        var recipe = await _context.Recipe.FirstOrDefaultAsync(r => r.Id == recipeId);
+
+        if (recipe is null) return null;
+        return recipe.ToRecipeDto();
     }
 
-    public Task<RecipeDto> UpdateRecipeAsync(UpdateRecipeDto createRecipeDto)
+    public async Task<IList<RecipeMainInfoDto>> GetRecipesAsync()
     {
-        throw new NotImplementedException();
+        var recipesMainInfoDto = await _context.Recipe
+            .Select(RecipeMappers.ProjectToStoryMainInfoDto)
+            .ToListAsync();
+
+        return recipesMainInfoDto;
+    }
+
+    public async Task<RecipeDto?> UpdateRecipeAsync(UpdateRecipeDto updateRecipeDto)
+    {
+        var recipeToUpdate = _context.Recipe.FirstOrDefault(r => r.Id == updateRecipeDto.Id);
+
+        if (recipeToUpdate is null) return null;
+
+        _context.Entry(recipeToUpdate).CurrentValues.SetValues(updateRecipeDto);
+        recipeToUpdate.UpdatedAt = DateTimeOffset.Now;
+        await _context.SaveChangesAsync();
+
+        return recipeToUpdate.ToRecipeDto();
     }
 }

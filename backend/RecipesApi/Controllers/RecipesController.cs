@@ -25,19 +25,17 @@ public class RecipesController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<RecipeMainInfoDto>> GetRecipes()
     {
-        var recipes = await _context.Recipe
-            .Select(RecipeMappers.ProjectToStoryMainInfoDto)
-            .ToListAsync();
+        var recipes = await _recipeService.GetRecipesAsync();
 
         return Ok(recipes);
     }
 
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<RecipeDto>> GetRecipe([FromRoute] int id)
+    public async Task<ActionResult<RecipeDto>> GetRecipe([FromRoute] int recipeId)
     {
-        var recipe = await _context.Recipe.FirstOrDefaultAsync(r => r.Id == id);
+        var recipe = await _recipeService.GetRecipeAsync(recipeId);
 
-        if (recipe is null) return StatusCode(StatusCodes.Status404NotFound);
+        if (recipe is null) return NotFound();
 
         return Ok(recipe);
     }
@@ -45,10 +43,7 @@ public class RecipesController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<RecipeDto>> CreateRecipe(CreateRecipeDto createRecipeDto)
     {
-        var newRecipe = createRecipeDto.ToRecipeModel();
-        await _context.Recipe.AddAsync(newRecipe);
-        await _context.SaveChangesAsync();
-        var newRecipeDto = newRecipe.ToRecipeDto();
+        var newRecipeDto = await _recipeService.CreateRecipeAsync(createRecipeDto);
 
         return CreatedAtAction(nameof(GetRecipe), new { id = newRecipeDto.Id }, newRecipeDto);
     }

@@ -20,9 +20,10 @@ public static class RecipeMappers
     {
         return new UpdateRecipeDto
         {
+            Id = recipeModel.Id,
             Name = recipeModel.Name,
             Description = recipeModel.Description,
-            UpdatedAt = recipeModel.UpdatedAt,
+            Text = recipeModel.Text,
         };
     }
 
@@ -30,6 +31,7 @@ public static class RecipeMappers
     {
         return new RecipeDto
         {
+            Id = recipeModel.Id,
             Name = recipeModel.Name,
             Description = recipeModel.Description,
             Text = recipeModel.Text,
@@ -42,6 +44,7 @@ public static class RecipeMappers
     {
         return new RecipeMainInfoDto
         {
+            Id = recipeModel.Id,
             Name = recipeModel.Name,
             Description = recipeModel.Description,
             CreatedAt = recipeModel.CreatedAt,
@@ -63,13 +66,24 @@ public static class RecipeMappers
 
 
     // Dto to Model
-    public static Recipe ToRecipeModel(this CreateRecipeDto recipeDto)
+    public static Recipe ToRecipeModel(this CreateRecipeDto createRecipeDto)
     {
         return new Recipe
         {
-            Name = recipeDto.Name,
-            Description = recipeDto.Description,
-            Text = recipeDto.Text,
+            Name = createRecipeDto.Name,
+            Description = createRecipeDto.Description,
+            Text = createRecipeDto.Text,
+        };
+    }
+
+    public static Recipe ToRecipeModel(this UpdateRecipeDto updateRecipeDto)
+    {
+        return new Recipe
+        {
+            Id = updateRecipeDto.Id,
+            Name = updateRecipeDto.Name,
+            Description = updateRecipeDto.Description,
+            Text = updateRecipeDto.Text,
         };
     }
 }
