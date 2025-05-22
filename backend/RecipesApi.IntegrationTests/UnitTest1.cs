@@ -1,4 +1,4 @@
-namespace RecipeApi.IntegrationTests;
+namespace RecipesApi.IntegrationTests;
 
 public class UnitTest1
 {

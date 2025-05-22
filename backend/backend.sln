@@ -3,26 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApi", "RecipesApi\RecipesApi.csproj", "{2BF93796-14BA-4868-8541-84F02C42F04F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApi", "RecipesApi\RecipesApi.csproj", "{AFC864ED-26B7-4C90-8A5C-0F4823C19CE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApi.IntegrationTests", "RecipeApi.IntegrationTests\RecipesApi.IntegrationTests.csproj", "{E530B053-40E4-4ACC-988D-E51A1A706375}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApi.IntegrationTests", "RecipesApi.IntegrationTests\RecipesApi.IntegrationTests.csproj", "{FC29D2D8-C6F8-4719-9D62-A9577A98E33B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2BF93796-14BA-4868-8541-84F02C42F04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BF93796-14BA-4868-8541-84F02C42F04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BF93796-14BA-4868-8541-84F02C42F04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BF93796-14BA-4868-8541-84F02C42F04F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E530B053-40E4-4ACC-988D-E51A1A706375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E530B053-40E4-4ACC-988D-E51A1A706375}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E530B053-40E4-4ACC-988D-E51A1A706375}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E530B053-40E4-4ACC-988D-E51A1A706375}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFC864ED-26B7-4C90-8A5C-0F4823C19CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC864ED-26B7-4C90-8A5C-0F4823C19CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC864ED-26B7-4C90-8A5C-0F4823C19CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC864ED-26B7-4C90-8A5C-0F4823C19CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC29D2D8-C6F8-4719-9D62-A9577A98E33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC29D2D8-C6F8-4719-9D62-A9577A98E33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC29D2D8-C6F8-4719-9D62-A9577A98E33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC29D2D8-C6F8-4719-9D62-A9577A98E33B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
