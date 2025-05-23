@@ -10,6 +10,10 @@
   margin: 5px;
   position: static;
   justify-content: center;
+  color: var(--text-950);
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .menuTitle{
@@ -19,12 +23,14 @@
   font-family: "Dancing Script", cursive;
   font-style: normal;
   font-size: 60px;
+  color: white;
 }
 
 .subtitittle{
   position: static;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: white;
   font-family: "Dancing Script", cursive;
   font-style: normal;
   font-size: 42px;

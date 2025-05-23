@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/frontend/styles/main.css">
     <script src="/frontend/script/markdown.js"></script>
+    <script src="/frontend/script/themeChange.js"></script>
     <title>TemPrato - Nova Receita</title>
 </head>
 
@@ -22,7 +23,6 @@
         <span>
             <h1 class="subtitittle">com as suas deliciosas receitas?</h1>
         </span>
-
     </header>
 
     <br>
@@ -66,8 +66,8 @@
 
         <div class="fontSizeCtnr">
 
-            <button class="btnTool" id="actress" onclick="actress()">
-                <i class="fas fa-plus"></i>
+        <button class="btnTool" id="actress" onclick="actress()">
+        <i class="fas fa-plus"></i>
             </button>
 
             <select class="toolSelect" id="fontSize" onchange="fontSize(this.value)">
