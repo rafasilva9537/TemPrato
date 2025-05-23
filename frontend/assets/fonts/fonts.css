@@ -35,10 +35,12 @@ small {font-size: 0.750rem; }
   margin: 10px;
   font-size: 25px;
   display: flex;
+  color: var(--text-950);
 }
 
 .fa-user-circle{
   margin: 50px;
   font-size: 70px;
   display: flex;
+  color: white;
 }
