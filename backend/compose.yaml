@@ -1,0 +1,39 @@
+services:
+  api:
+    build:
+      context: ./RecipesApi
+      target: production
+    ports:
+      - 5000:8080
+    container_name: recipes_api
+    hostname: api_host
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      db:
+        condition: service_started # TODO: implement healthcheck (with service_healthy)
+        restart: true
+    restart: on-failure:10
+    develop:
+      watch:
+        - action: rebuild
+          path: ./RecipesApi/RecipesApi.csproj
+        - action: sync
+          path: ./RecipesApi
+          target: /src
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 1433:1433
+    container_name: recipes_mssql
+    hostname: mssql_host
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+      - MSSQL_SA_PASSWORD=examplePassword123
+    volumes:
+      - recipes_db:/var/opt/mssql
+
+volumes:
+  recipes_db:
