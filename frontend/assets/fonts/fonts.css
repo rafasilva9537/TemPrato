@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=PT%20Sans:700|PT%20Sans:400');
+
+ 
+
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Sans';
+  font-weight: 600;
+  color: var(--text-950);
+}
+
+html {font-size: 100%;} 
+
+h1 {font-size: 3.210rem; }
+
+h2 {
+  height: 10%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {font-size: 1.8rem; }
+
+h4 {font-size: 1.777rem; }
+
+h5 {font-size: 1.333rem; }
+
+small {font-size: 0.750rem; }
+
+
+/*fa-fasIcons*/
+
+.fa-plus-square{
+  margin: 10px;
+  font-size: 25px;
+  display: flex;
+}
+
+.fa-user-circle{
+  margin: 50px;
+  font-size: 70px;
+  display: flex;
+}

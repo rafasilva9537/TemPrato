@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* tittle and icon "tem prato" */
+
+
+.temPratoLogo{
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  position: static;
+  justify-content: center;
+}
+
+.menuTitle{
+  align-self: center;
+  position: static;
+  margin: 5px;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.subtitittle{
+  position: static;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.homePageLink{
+  position: static;
+  display: flex;
+  left: 0;
+  color: var(--text-950);
+  text-decoration: none;
+  margin: 10px;
+}
+
+
+
+/*Animation logo*/
+
+.temPratoLogo,.menuTitle,.homePageLink{
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-direction: normal;
+}
+
+
+@keyframes pulse{
+
+  50%{
+    transform: scale(1.0);
+  }
+
+  3%{
+    transform: scale(0.2);
+  }
+
+}

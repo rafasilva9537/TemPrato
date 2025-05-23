@@ -1,0 +1,52 @@
+
+
+.toolsContainer{
+    margin: auto;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    flex: 1;
+    top: 0;
+    padding: 1%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius:30px ;
+    background-color: rgb(226, 228, 231);
+}
+
+.fontSizeCtnr{
+    display: flex;
+    flex: auto;
+    margin: 1px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#editor {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    min-height: 200px;
+}
+
+#colorTextPick[type="color"] {
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 3px;
+    width: 50px;
+}
+
+#bgColorPick[type = "text"], input[type = "file"] {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 1px;
+    width: 200px;
+}
