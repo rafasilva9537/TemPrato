@@ -1,26 +1,36 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
-
-body{
-    margin: 0;
-    display: center;
-    justify-content: center;
+.recipeMain {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100px;
-    background-color: white;
+    padding: 30px;
 }
+
+.textRecipe{
+    text-align: center;
+    color: var(--text-800);
+}
+
 .card{
     position: relative;
-    width: 700px;
+    width: 720px;
     box-shadow: 0 3px 2px rgba(112, 5, 5, 0.2);
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 7px;
+    border: solid 3px var(--secondary-700);
+    padding-right: 90px;
+    background-color:var( --background-100);
+    object-fit: cover;
 }
-.car img{
+
+.card img{
     width: 100%;
     height: auto;
     display: block;
+
 }
+
 .caption{
     position: absolute;
     bottom: 0;
@@ -31,36 +41,42 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
+}
 
-}
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    
-}
 .actions {
+    position:absolute;
     display: flex;
+
     justify-content: space-between;
-    align-items: center;
+    right: 0;
+    top: 0;
     margin-top: 20px;
     max-width: 400px;
 }
-.share{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
+
+
+
 .share span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     color: #333;
 }
+
 .icons{
     display: flex;
+    flex-direction: column;
     gap: 20px;
-
 }
+.icons ul{
+    position: relative;
+    right: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+}
+
 .icons a{
     color: black;
     font-size: 20px;
@@ -69,28 +85,7 @@ p{
 
 .icons a:nth-child(1) { color: #1da1f2; } 
 .icons a:nth-child(2) { color: #3b5998; }   
-.icons a:nth-child(3) { color: #bd081c; } 
-.icons a:nth-child(4) { color: #25d366; } 
+.icons a:nth-child(3) { color: #08bd26; } 
+.icons a:nth-child(4) { color: #000000; } 
+.icons a:nth-child(5) { color: #ff0000; } 
 
-.favorite {
-  border: 1px solid #000;
-  background: none;
-  color: #000;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  letter-spacing: 1px;
-  transition: all 0.2s ease;
-}
-
-.favorite i {
-  color: red;
-}
-
-.favorite:hover {
-  background-color: #f8f8f8;
-}
